@@ -111,8 +111,8 @@ h1, h2, h3, h4, .nav__logo { font-family: "Space Grotesk", sans-serif; letter-sp
 .fact__v { display: block; color: var(--text); font-weight: 600; font-family: "Space Grotesk", sans-serif; font-size: 1.02rem; }
 
 /* ---------- Impact / Metrics ---------- */
-.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin-bottom: 60px; }
-.metric { background: var(--panel); border: 1px solid var(--panel-brd); border-radius: var(--radius); padding: 30px 26px; transition: transform 0.35s var(--ease), border-color 0.35s, background 0.35s; }
+.metrics { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-bottom: 60px; }
+.metric { background: var(--panel); border: 1px solid var(--panel-brd); border-radius: var(--radius); padding: 30px 26px; transition: transform 0.35s var(--ease), border-color 0.35s, background 0.35s; flex: 0 1 300px; max-width: 320px; }
 .metric:hover { transform: translateY(-6px); border-color: rgba(34, 211, 238, 0.4); background: var(--panel-hover); }
 .metric__num { display: flex; align-items: baseline; gap: 4px; margin-bottom: 12px; font-family: "Space Grotesk", sans-serif; font-size: clamp(2.1rem, 4.6vw, 2.8rem); font-weight: 700; line-height: 1; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .metric__unit { font-size: 1.05rem; }
